@@ -18,6 +18,8 @@ DNR-based ad filtering (local only)
 
 This URL is not stored, not logged, and not linked to any user identity.
 
+
+
 1.2 Local Browser Data (Not transmitted)
 NetWatch uses browser APIs, but no local data ever leaves the device. This includes:
 
@@ -28,8 +30,9 @@ Whether ads were blocked
 
 This data is used exclusively to generate on-page warnings.
 
-2. What We DO NOT Collect
 
+
+2. What We DO NOT Collect
 NetWatch never collects, stores, or transmits:
 
 Personal information
@@ -44,8 +47,9 @@ Payment information
 
 NetWatch does not sell or share data with third parties.
 
-3. How the Extension Uses Permissions
 
+
+3. How the Extension Uses Permissions
 The Chrome Web Store requires justification for each permission:
 
 activeTab
@@ -58,9 +62,11 @@ Display security findings in the popup
 No other data from the tab is accessed.
 
 
+
 declarativeNetRequest
 Used only for rule-based ad blocking of malicious advertisements.
 No network requests or user data leave the browser.
+
 
 
 host_permissions ("<all_urls>")
@@ -73,12 +79,15 @@ Show security overlays on any visited page
 No page content is read; only page metadata is analyzed.
 
 
+
 notifications
 Used to optionally notify the user if a high-risk threat is detected.
 
 
+
 scripting
 Allows the extension to inject the security overlay script to warn users when a malicious site is loaded.
+
 
 
 storage
@@ -90,13 +99,16 @@ Flags to avoid repeating alerts on the same site
 No personal or browsing data is saved.
 
 
+
 tabs
 Allows the extension to know when the user switches tabs so the security scan can be rerun.
 NetWatch does not log or store tab information.
 
 
+
 webNavigation
 Used to detect when a page navigation finishes so the background scanner can run automatically.
+
 
 remote code use
 NetWatch uses remote API calls exclusively to:
@@ -107,6 +119,7 @@ URLScan
 CheckSSL
 
 No user identity or personal data is ever sent. Only the URL being scanned is transmitted.
+
 
 
 4. Third-Party Services
@@ -121,8 +134,9 @@ NetWatch API (your server)
 Data shared: only the active URL.
 No personal data, cookies, or identifiers are transmitted.
 
-5. Data Retention
 
+
+5. Data Retention
 NetWatch does:
 
 Not store user data
@@ -132,9 +146,13 @@ Not log or retain URLs after scanning
 
 Short-term cache (non-personal) is stored in memory for performance and expires automatically.
 
+
+
 6. Security
 NetWatch sends all API requests through HTTPS.
 The extension does not execute or load any remote scripts into the browser.
+
+
 
 7. Single Purpose Description
 NetWatch performs one purpose:
