@@ -2,4 +2,4 @@
 title: NetWatch Privacy Policy
 ---
 
-{% include_relative privacy_policy.md %}
+https://raw.githubusercontent.com/DogeHF2/netwatch-policy/refs/heads/main/privacy_policy.md
